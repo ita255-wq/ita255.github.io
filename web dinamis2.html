@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKKERY & CAKE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5ab;
+            text-align: center;
+        }
+        header {
+            background-color: #8b4513;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #d2691e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        marquee {
+            font-size: 18px;
+            color: #8b4513;
+            margin: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .produk {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .produk-item {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .circle-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .welcome-text {
+            font-size: 20px;
+            color: #8b4513;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .about-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .about-item {
+            text-align: center;
+        }
+        .about-text {
+            font-size: 16px;
+            color: #8b4513;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>BAKKERY & CAKE - Fresh & Tasty</header>
+    <nav>
+        <a onclick="showContent('home')">Home</a>
+        <a onclick="showContent('about')">About</a>
+        <a onclick="showContent('customer')">Customer</a>
+        <a onclick="showContent('contact')">Contact</a>
+    </nav>
+    <marquee>Promo Spesial! Diskon hingga 30% untuk roti pilihan hari ini!</marquee>
+    
+    <div id="home" class="content">
+        <h2>Selamat Datang di Toko Bakkery & Cake</h2>
+        <img src="logo.jpg" alt="Toko Roti" class="circle-img">
+
+        <p class="welcome-text">Nikmati berbagai pilihan bakkery dan cake yang selalu fresh dan berkualitas tinggi! 
+            Bakery menyediakan berbagai jenis roti, kue, pastry, dan makanan manis lainnya. Dengan begitu, pelanggan memiliki banyak pilihan dan bisa menemukan
+             hidangan yang sesuai dengan selera dan preferensi mereka.</p>
+    </div>
+    <div id="about" class="content">
+        <h2>Menu Kami</h2>
+        <div class="about-gallery">
+            <div class="about-item">
+                <img src="donat.jpg" alt="donat" class="circle-img">
+                <p class="about-text">Donat Manis Lembut</p>
+            </div>
+            <div class="about-item">
+                <img src="cromboloni.jpg" alt="cromboloni" class="circle-img">
+                <p class="about-text">Cromboloni Renyah</p>
+            </div>
+            <div class="about-item">
+                <img src="pancake.jpg" alt="pancake" class="circle-img">
+                <p class="about-text">Pancake Lembut</p>
+            </div>
+            <div class="about-item">
+                <img src="almond.jpg" alt="coklat almond" class="circle-img">
+                <p class="about-text">Roti Coklat Almond</p>
+            </div>
+        </div>
+    </div>
+    <div id="customer" class="content">
+        <h2>Pelanggan Kami</h2>
+        <img src="customer.jpg" alt="Pelanggan">
+        <p Class="welcome-text">Kami memiliki pelanggan atu customer yang ramah-ramah,mereka tidak bosan dengan makanan yang ada di toko kami.</p>
+        </div>
+    </div>
+    </body> 
+        <div id="contact" class="content">
+        <h2>Contact Us</h2>
+                <li><strong>Email:</strong> <a href="bakkeryandcake@gmail.com">bakkeryandcake@gmail.com</a></li>
+                <li><strong>Address:</strong> Jl. madura No. 123, Jakarta, Indonesia</li>
+                <li><strong>Phone:</strong> +62 815 0106 2009</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+   </section>
+</body>
+</html>
